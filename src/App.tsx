@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+﻿import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <div className="h-screen w-screen flex flex-col bg-[#f5f5f7] overflow-hidden font-sans">
-      
+
       {/* HEADER: Hidden when printing */}
       <header className="no-print h-14 shrink-0 bg-white/80 backdrop-blur-md border-b border-[#e5e5ea] px-6 flex justify-between items-center z-10">
         <h1 className="text-[17px] font-semibold tracking-tight text-[#1d1d1f]">
